@@ -1,5 +1,7 @@
 Checkpoint 1 - 2 semestre
-Participantes: Lucas Pisaneschi Speranzini, Vinicius Oliveira de Barros
+Participantes: Lucas Pisaneschi Speranzini(RM98297), Vinicius Oliveira de Barros(RM97824)
+
+usuário: admin, senha: admin
 
 Script MySQL
 
@@ -10,15 +12,5 @@ CREATE TABLE Arbitros (
     id_arbitro* INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     ranking ENUM('bronze', 'prata', 'ouro') NOT NULL,
-    experiencia INT NOT NULL, -- Experiência em número de jogos arbitrados
     especialidade VARCHAR(50) -- Tipo de jogo em que o árbitro se destaca
-    jogos id_jogo*
-);
-
-CREATE TABLE Jogos (
-    id_jogo* INT PRIMARY KEY AUTO_INCREMENT,
-    data_jogo VARCHAR(10) NOT NULL,
-    tipo ENUM('bronze', 'prata', 'ouro') NOT NULL,
-    endereco: VARCHAR(255),
-    descricao VARCHAR(255)
 );

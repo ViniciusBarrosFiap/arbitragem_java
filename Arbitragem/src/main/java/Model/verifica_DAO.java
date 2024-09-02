@@ -8,7 +8,6 @@ import javax.swing.JOptionPane;
 public class verifica_DAO {
    
     public static void login(){
-        
         String log = View.Login_GUI.login_txt.getText();
         log = log.toLowerCase();
         
@@ -19,9 +18,10 @@ public class verifica_DAO {
             JOptionPane.showMessageDialog(null,"Seja Bem Vindo !!!");
             new Menu_GUI().setVisible(true);
         }else{
-     
             JOptionPane.showMessageDialog(null, "Senha ou Login incorreto\nTente Novamente !");
         }
+        
+        
     
     }
     
